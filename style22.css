@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(to top right, #7233aa, #44b0ff);
+}
+#ras,#res {
+  border-radius: 2px;
+  border: 0px;
+  font-size: 13px;
+}
+#ras:hover {
+background: linear-gradient(to top right, #5344ff, #4f4fff);
+color: white;
+font-size: 14px;
+}
+#res:hover {
+  background: linear-gradient(to top right, #3344ff, #3f4fff);
+  color: white;
+  font-size: 14px;
+}
+input {
+  margin: 3px;
+}
+input[type=text] {
+  font-weight: 300;
+  font-size: 12px;
+}
+input[type=text]:focus {
+  font-size: 14px;
+  font-weight: 500;
+}
+#text1 {
+  text-align: left;
+}
+b {
+  color: none;
+}
+.div {
+  margin-left: 30px;
+  float: left;
+}
+#form {
+  width: 400px;
+}
+.default {
+  cursor: default;
+}
+.crosshair {
+  cursor: crosshair;
+}
+.move {
+  cursor: move;
+}
+.pointer {
+  cursor: pointer;
+}
+.progress {
+  cursor: progress;
+}
+.text {
+  cursor: text;
+}
+.wait {
+  cursor: wait;
+}

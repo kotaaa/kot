@@ -1,0 +1,109 @@
+﻿<html>
+<head>
+	<link rel="stylesheet" href="style22.css">
+  <meta charset="utf-8">
+<script language='javascript'>
+function Ras()
+{
+// ���� ;
+//var c = new Array();
+var NN, Z=0, x=0, y=0, oper=0, c1=0, c2=0, c3=0, c4=0, c5=0, p=0, i, c = [0,0,0,0,0,0];
+}
+//=====================================
+
+function Rac1() {
+  var a=0, b=0, max, min, arr=[], x, n,k=0, Sred;
+  a = document.f2.a.value;
+  a=parseInt(a,10);
+  b = document.f2.b.value;
+  b=parseInt(b,10);
+
+  // alert(a,b);
+  n = document.f2.n.value;
+  n=parseInt(n,10);
+  //min = document.f2.min.value;
+  //min = document.getElementById("min");
+  //parseInt(n,10);
+  arr.length = n;
+  // Zapolnenie Massiva
+  for (i=0; i<n; i++) {
+    x = (b-a)* Math.random() + a;
+    arr[i]=x;
+}
+for (i=0; i<n; i++) {
+  document.f2.text1.value += Math.floor(arr[i]) + "\n";
+}
+for (var i = 0; i < n; i++) {
+  k=k+arr[i];
+}
+  Sred=k/n;
+max=arr[0]; imax=0; min=arr[0]; imin=0;
+for (i=0; i<n; i++) {
+  if (max < arr[i]) {max=arr[i]; imax=i;}
+}
+document.f2.max.value=max;
+for (i=0; i<n; i++) {
+  if (min > arr[i]) {min=arr[i]; imin=i;}
+}
+document.f2.min.value=min;
+document.f2.Sred.value=Sred;
+document.f2.imax.value=imax;
+document.f2.imin.value=imin;
+
+
+//  x = document.getElementById("text1");
+//  x.innerHTML += Math.floor(Math.random() * (b - a + 1)) + '\n';
+//  min = Math.min.apply(null, arr);
+//min.innerHTML += '4';
+
+  // Poisk Min
+  //min = Math.min.apply(null, arr); alert(min);
+  /*for (i=0;i<=n; i++) {
+   //min = document.getElementById("min");
+   document = Math.min.apply(null, arr);
+  //n.innerHTML += Math.floor(Math.min(arr)); alert(min);
+    //min.innerHTML += Math.floor(Math.min());
+  }
+  */
+/*  Array.min = function( arr ){
+    min = Math.min.apply( Math, arr );
+};
+Array.min(arr);
+  function getMaxOfArray(arr) {
+  return Math.max.apply(null, arr);
+}
+getMaxOfArray(arr);
+  min = Math.min.apply(null, arr);
+  alert(min);
+  */
+}
+</script>
+</head>
+
+<body><div style="float:left">
+  <form name="f2" id="form">
+    <b>a = <input type="text" size="10" name="a" value="10"> b = <input type="text" size="10" name="b" value="50"><br>
+    n = <input type="text" name="n" value="7">
+    <input type="button" name="n23" id="ras" onClick="Rac1();" value=" Расчёт "><br>
+    <textarea id="text1" rows="10" cols="50"></textarea><br>
+    Max : <input type="text" name="max" value="">i: <input type="text" name="imax" value=""><br>
+    Min : <input type="text" name="min" value="">j: <input type="text" name="imin" value=""><br>
+    Ср. Знач : <input type="text" name="Sred" value="">
+    <input type="reset" id="res" name="" value="Сброс">
+<textarea  name="area" cols="50" rows="9">
+</textarea>
+</form><form name="f3"></div> <div class="div"  style="float:left">
+<ol>
+	<li><img src="css_cursor_default.png" alt="Default"> - <input type="button" name="" class="default" value="Применить"></li>
+	<li><img src="css_cursor_crosshair.png" alt="Default"><span>   </span> - <input type="button" name=""  class="crosshair" value="Применить"></li>
+	<li><img src="css_cursor_move.png" alt="Default"><span>   </span> - <input type="button" name="" onClick="class="move";" value="Применить"></li>
+	<li><img src="css_cursor_pointer.png" alt="Default"><span>   </span> - <input type="button" name="" onClick="class="pointer";" value="Применить"></li>
+	<li><img src="css_cursor_progress.png" alt="Default"><span>   </span> - <input type="button" name="" onClick="class="progress";" value="Применить"></li>
+	<li><img src="css_cursor_text.png" alt="Default"><span>   </span> - <input type="button" name="" onClick="class="text";" value="Применить"></li>
+	<li><img src="css_cursor_wait.png" alt="Default"><span>   </span> - <input type="button" name="" onClick="class="wait";" value="Применить"></li>
+<ol></b>
+Введите номер курсора <br>
+<input type="text" name="nm" value=""> <input type="button" name="" value="Применить">
+</div></form>
+</body>
+</html>

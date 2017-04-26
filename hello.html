@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<title>Title</title>
+	<meta charset="windows-1251">
+</head>
+<body>
+	<h3>otgad</h3>
+	<p>Сто одежек и все без застежек</p>
+	<input type="text" id="task1" value="" />
+	<br><br><br>
+
+	<p>Зимой и летом одним цветом</p>
+	<input type="text" id="task2" value="" />
+	<br><br><br>
+	<input type="button" id="button" onclick="checkAnswers()" value="Ответить" />
+	<script>
+	function checkAnswer(id, trueAnswer) {
+	var userAnswer = document.getElementById(id).value;
+	return userAnswer==trueAnswer;
+}
+	function checkAnswers() {
+	var goodAnswers = ['лук', 'елка'], allRight= true;
+	if (!checkAnswer('task1', goodAnswers[0])) allRight = false;
+	if (!checkAnswer('task2', goodAnswers[1])) allRight = false;
+
+	if(allRigth) alert('Вы угадали');
+	else alert('Вы не угадали');
+}
+	</script>
+</body>
+</html>

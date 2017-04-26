@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style1.css">
+  <title>getElementById example</title>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$(".btn-slide").click(function(){
+			$("#panel").slideToggle("slow");
+			$(this).toggleClass("passiv");
+	});
+});
+	</script>
+  <script>
+  function changeColor(q) {
+		var e = document.getElementById('tex');
+		e.style.color= q;
+		e.innerHTML="SOME TEXT HERE";
+	}
+</script>
+<style type="text/css">
+body {
+	margin: 0 auto;
+	padding: 0;
+	width: 570px;
+	font: 75%/120% Arial, Helvetica, sans-serif;
+}
+a:focus {
+		outline-color: #0f7dbb;
+}
+#panel {
+	background: #754c24;
+	height: 200px;
+	display: none;
+}
+.slide {
+	margin: 0;
+	padding: 0;
+	border-top: solid 4px #422410;
+	background: #ffffff no-repeat center top;
+}
+.btn-slide {
+	background: #078dc7 no-repeat right -50px;
+	text-align: center;
+	width: 144px;
+	height: 31px;
+	padding: 10px 10px 0 0;
+	margin: 0 auto;
+	display: block;
+	font: bold 120%/100% Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+.active {
+	background-position: right 12px;
+}
+a {
+	text-decoration: none;
+	padding: 3px;
+}
+a:hover {
+	color: #0071da;
+	text-decoration: none;
+	background: #ac2e2e;
+
+}
+</style>
+</head>
+<body>
+	<div id="cp_widget_93d011c7-4271-4742-9a0a-ff03322b519b">...</div><script type="text/javascript">
+var cpo = []; cpo["_object"] ="cp_widget_93d011c7-4271-4742-9a0a-ff03322b519b"; cpo["_fid"] = "A0EA-5dPCm1n";
+var _cpmp = _cpmp || []; _cpmp.push(cpo);
+(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+var c = document.getElementsByTagName("script")[0];
+c.parentNode.insertBefore(cp, c); })(); </script>
+	<div>
+		<table border="1">
+			<tr>
+				<td colspan="5"><input type="text"  class="text" name="" value=""></td>
+			</tr>
+			<tr>
+				<td class="CE"><input type="button" name="" value="CE"></td>
+				<td class="sin"><input type="button" name="" value="sin"></td>
+				<td calss="cos"><input type="button" name="" value="cos"></td>
+				<td class="="><input type="button" name="" value="="></td>
+			</tr>
+			<tr>
+				<td class="1"><input type="button" name="" value="1"></td>
+				<td class="2"><input type="button" name="" value="2"></td>
+				<td class="3"><input type="button" name="" value="3"></td>
+				<td class="*"><input type="button" name="" value="*"></td>
+			</tr>
+			<tr>
+				<td class="4"><input type="button" name="" value="4"></td>
+				<td class="5"><input type="button" name="" value="5"></td>
+				<td class="6"><input type="button" name="" value="6"></td>
+				<td class="/"><input type="button" name="" value="/"></td>
+			</tr>
+			<tr>
+				<td class="7"><input type="button" name="" value="7"></td>
+				<td class="8"><input type="button" name="" value="8"></td>
+				<td class="9"><input type="button" name="" value="9"></td>
+				<td class="-"><input type="button" name="" value="-"></td>
+			</tr>
+			<tr>
+				<td class="2">132</td>
+				<td class="0"><input type="button" name="" value="0"></td>
+				<td class="."><input type="button" name="" value="."></td>
+				<td class="+"><input type="button" name="" value="+"></td>
+			</tr>
+		</table>
+	</div>
+	<div id="panel">
+
+</div>
+
+<p class="slide"><a href="#" class="btn-slide">Slide Panel</a></p>
+<p align="center"><a href="" align="center"><b>Google</b></a>
+	<div id="tex">
+  <p id="tex"><h4 id="tex"><strong>Some text here</strong></h4></p></div>
+  <button onClick="changeColor('rgb(150, 4, 8)');">green</button>
+  <button onClick="changeColor('rgb(14, 0, 173)');">orange</button>
+	<button onClick="changeColor('rgb(14, 152, 230)');">blue</button><span></span>
+	<input id="kot" type="button" onClick="changeColor('rgb(51, 68, 255)');" name="" value="Blue">
+	<table align="center">
+		<tr id="text">
+			<td id="text" align="center">1</td>
+		</tr>
+<ol type="">
+	<li>1 Список</li>
+	<li>2 Список</li>
+	<li><ol start="5" type="A"><li></li></ol></li>
+	<li></li>
+	<li></li>
+</ol>
+	</table>
+	<pre>
+		for i:=1 to n do begin
+		    a:=a+1;
+		  end; <-- use
+	</pre>
+	<iframe src="mykot.html" width="100%" height="100%"></iframe>
+	<a href="">Google</a>
+</body>
+</html>

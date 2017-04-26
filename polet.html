@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="polet.css">
+    <script src="jquery-3.1.1.min.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    var tim, dy=0, dx=0, xk=0, yk=0;
+    function Move() {
+        var obj = document.getElementById("polet").style;
+          if (obj.posLeft < 1000  )  {obj.posLeft += 5; }
+          yk = Math.round(Math.sin(xk) * 120 + 200);
+          obj.posTop = parseInt(yk,10);
+          xk=xk+yk;
+        else { clearInterval;}
+      }
+    </script>
+  </head>
+  <body onload="tim=setInterval('Move()', 50);">
+<div id="polet" >
+  <img src="ch.png" width="10%" height="10%" alt="">
+</div>
+<div id="po">
+  <table border="1">
+    <tr>
+      <td class=""></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+  </body>
+</html>
